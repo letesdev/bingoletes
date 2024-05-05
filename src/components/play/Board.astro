@@ -1,0 +1,119 @@
+---
+const NB_Numeros = 80;
+
+const numRows = Math.ceil(NB_Numeros / 10);
+---
+
+<table class="font-righteous mx-auto">
+    {
+        Array.from({ length: numRows }).map((_, i) => (
+            <tr>
+                {Array.from({ length: 10 }).map((_, j) => {
+                    const index = i * 10 + j + 1; // Increment to start at 1
+                    return (
+                        <td class="border-2 p-0.5 min-w-10 text-center text-2xl md:text-3xl" id={`number_${index}`}>{index}</td>
+                    );
+                })}
+            </tr>
+        ))
+    }
+</table>
+
+<!--<table class="table-fixed border-collapse border ">
+    <tr>
+        <td class="border" id="number_1">1</td>
+        <td class="border" id="number_2">2</td>
+        <td class="border" id="number_3">3</td>
+        <td class="border" id="number_4">4</td>
+        <td class="border" id="number_5">5</td>
+        <td class="border" id="number_6">6</td>
+        <td class="border" id="number_7">7</td>
+        <td class="border" id="number_8">8</td>
+        <td class="border" id="number_9">9</td>
+        <td class="border" id="number_10">10</td>
+    </tr>
+    <tr>
+        <th class="border" id="number_11">11</th>
+        <th class="border" id="number_12">12</th>
+        <th class="border" id="number_13">13</th>
+        <th class="border" id="number_14">14</th>
+        <th class="border" id="number_15">15</th>
+        <th class="border" id="number_16">16</th>
+        <th class="border" id="number_17">17</th>
+        <th class="border" id="number_18">18</th>
+        <th class="border" id="number_19">19</th>
+        <th class="border" id="number_20">20</th>
+    </tr>
+    <tr>
+        <th class="border" id="number_21">21</th>
+        <th class="border" id="number_22">22</th>
+        <th class="border" id="number_23">23</th>
+        <th class="border" id="number_24">24</th>
+        <th class="border" id="number_25">25</th>
+        <th class="border" id="number_26">26</th>
+        <th class="border" id="number_27">27</th>
+        <th class="border" id="number_28">28</th>
+        <th class="border" id="number_29">29</th>
+        <th class="border" id="number_30">30</th>
+    </tr>
+    <tr>
+        <th class="border" id="number_31">31</th>
+        <th class="border" id="number_32">32</th>
+        <th class="border" id="number_33">33</th>
+        <th class="border" id="number_34">34</th>
+        <th class="border" id="number_35">35</th>
+        <th class="border" id="number_36">36</th>
+        <th class="border" id="number_37">37</th>
+        <th class="border" id="number_38">38</th>
+        <th class="border" id="number_39">39</th>
+        <th class="border" id="number_40">40</th>
+    </tr>
+    <tr>
+        <th class="border" id="number_41">41</th>
+        <th class="border" id="number_42">42</th>
+        <th class="border" id="number_43">43</th>
+        <th class="border" id="number_44">44</th>
+        <th class="border" id="number_45">45</th>
+        <th class="border" id="number_46">46</th>
+        <th class="border" id="number_47">47</th>
+        <th class="border" id="number_48">48</th>
+        <th class="border" id="number_49">49</th>
+        <th class="border" id="number_50">50</th>
+    </tr>
+    <tr>
+        <th class="border" id="number_51">51</th>
+        <th class="border" id="number_52">52</th>
+        <th class="border" id="number_53">53</th>
+        <th class="border" id="number_54">54</th>
+        <th class="border" id="number_55">55</th>
+        <th class="border" id="number_56">56</th>
+        <th class="border" id="number_57">57</th>
+        <th class="border" id="number_58">58</th>
+        <th class="border" id="number_59">59</th>
+        <th class="border" id="number_60">60</th>
+    </tr>
+    <tr>
+        <th class="border" id="number_61">61</th>
+        <th class="border" id="number_62">62</th>
+        <th class="border" id="number_63">63</th>
+        <th class="border" id="number_64">64</th>
+        <th class="border" id="number_65">65</th>
+        <th class="border" id="number_66">66</th>
+        <th class="border" id="number_67">67</th>
+        <th class="border" id="number_68">68</th>
+        <th class="border" id="number_69">69</th>
+        <th class="border" id="number_70">70</th>
+    </tr>
+    <tr>
+        <th class="border" id="number_71">71</th>
+        <th class="border" id="number_72">72</th>
+        <th class="border" id="number_73">73</th>
+        <th class="border" id="number_74">74</th>
+        <th class="border" id="number_75">75</th>
+        <th class="border" id="number_76">76</th>
+        <th class="border" id="number_77">77</th>
+        <th class="border" id="number_78">78</th>
+        <th class="border" id="number_79">79</th>
+        <th class="border" id="number_80">80</th>
+    </tr> 
+</table>-->
