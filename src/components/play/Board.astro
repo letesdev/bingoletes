@@ -11,7 +11,7 @@ const numRows = Math.ceil(NB_Numeros / 10);
                 {Array.from({ length: 10 }).map((_, j) => {
                     const index = i * 10 + j + 1; // Increment to start at 1
                     return (
-                        <td class="border-2 p-0.5 min-w-10 text-center text-2xl md:text-3xl" id={`number_${index}`}>{index}</td>
+                        <td class="border-2 p-0.5 min-w-9 text-center text-2xl md:text-3xl md:min-w-10" id={`number_${index}`}>{index}</td>
                     );
                 })}
             </tr>
