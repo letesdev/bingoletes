@@ -1,5 +1,5 @@
 ---
-// import '../styles/main.css'
+import LibreCounter from '../components/LibreCounter.astro';
 interface Props {
 	title: string;
 }
@@ -19,6 +19,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<LibreCounter/>
 	</body>
 </html>
 
