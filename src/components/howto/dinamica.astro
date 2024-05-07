@@ -1,0 +1,25 @@
+---
+import PauseButton from "../play/PauseButton.astro";
+
+---
+<div class="container font-righteous p-10 mx-auto text-lg md:text-md">
+    En el caso de querer jugar con banca:
+    <ol>
+        <li>
+            1. Imprimir cartones. Esta funcionalidad no está prevista en esta página estática, recomendamos la página de <a href="https://www.bingo.es/cartones-bingo/">bingo.es</a>  para generar cartones de 90 bolas (y tachar los números del 81 al 90).
+        </li>
+        <li>
+            2. Una persona hace de moderador (o banquero). Primero, debe poner a consenso el precio por cartón, el premio por línea y el premio por bingo. Segundo, debe repartir los cartones entre los jugadores y recuperar el dinero apostado. 
+            Por ejemplo, si sois 10 personas, podéis definir el precio del cartón a 1€, el premio por línea de 3€ y el premio por bingo de 7€.
+        </li>
+        <li>
+            3. <a href="/bingoletes/play">Lanzar el BingoLetes</a>. Los números se irán cantando uno tras otro, con las voces de personajes famosos. Encontraréis un tablero con los números del bingo e irán cambiando a <strong class="text-green-500">verde</strong> según vayan siendo cantados. Por si acaso no os da tiempo a seguir el juego, debajo del tablero encontraréis los últimos 5 números cantados. 
+        </li>
+        <li>
+            4. Cuando alguien cante <em>LINEA</em>, parar el juego con el botón de pausa y comprobar la línea gracias al tablero. Si la línea es válida, repartir el premio por línea y seguir con el juego con el botón de play. Si no es válida, el juego continúa y la línea puede seguir cantándose.
+        </li>
+        <li>
+            5. Cuando alguien cante <em>BINGO</em>, parar el juego de nuevo y comprobar el bingo gracias al tablero. Si es válido, repartir el premio por bingo y volver a empezar. Si no es válido, igual que con la línea no válida, el juego continúa y el bingo puede volver a cantarse.
+        </li>
+    </ol>
+</div>
