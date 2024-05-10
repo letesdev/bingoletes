@@ -1,0 +1,23 @@
+---
+interface Props {
+	number: string;
+	title: string;
+	// body: string;
+	// href: string;
+	class: className;
+}
+
+const { number, title, class:className } = Astro.props;
+---
+
+<div class:list={["bg-white xl:w-72 p-1 rounded-xl shadow-sm xl:hover:shadow-lg xl:hover:-translate-y-2 xl:hover:scale-105 cursor-default transition-all duration-200 undefined", className]}>
+	<div class="h-full w-full border rounded-lg p-3">
+		<div class="h-full w-full flex flex-col justify-center py-2 mb-2">
+			<div class="flex items-center gap-0.5">
+				<div class="xl:h-12 h-12 xl:w-12 w-12 xl:mb-0 text-3xl border rounded-full flex justify-center items-center">{number}</div>
+				<div>{title}</div>
+			</div>
+			<div class="justify-pretty"><slot /></div>
+		</div>
+	</div>
+</div>
