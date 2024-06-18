@@ -1,20 +1,25 @@
 ---
 import { Image } from 'astro:assets'
-import play from '../../assets/play.png'
+import bingo_blanco from '../../assets/bingo-blanco.svg'
+import bingo from '../../assets/bingo.svg'
+import vector_blanco from '../../assets/Vector.svg'
 import vector from '../../assets/Vector.png'
+
 ---
 <div class="container min-w-80 max-w-xs md:max-w-md mx-auto px-4 py-4">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto">
         <a href="/bingoletes/play">
-            <button class="border-4 rounded-md flex items-center w-full h-full transition-all duration-300 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2">
-                <Image class="w-1/4 p-2 md:p-1" src={play} alt="Botón para jugar." />
-                <p class="font-righteous w-3/4 p-2 text-2xl">Play!</p>
+            <button class="border-4 rounded-md dark:border-none dark:bg-slate-800 flex items-center w-full h-full transition-all duration-300 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2">
+                <Image class="w-1/4 p-2 md:p-1 dark:hidden" src={bingo} alt="Botón para jugar." />
+                <Image class="w-1/4 p-2 md:p-1 hidden dark:block" src={bingo_blanco} alt="Botón para jugar." />
+                <p class="font-righteous dark:text-slate-200 w-3/4 p-2 text-2xl">Play!</p>
             </button>
         </a>
         <a href="/bingoletes/howto">
-            <button class="border-4 rounded-md flex items-center w-full h-full transition-all duration-300 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2">
-                <Image class="w-1/4 p-2 md:p-1" src={vector} alt="Redirección a bingo.es para imprimir cartones"/>
-                <p class=" font-righteous w-3/4 p-4 text-lg">Cómo jugar?</p>
+            <button class="border-4 rounded-md dark:border-none dark:bg-slate-800 flex items-center w-full h-full transition-all duration-300 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2">
+                <Image class="w-1/4 p-2 md:p-1 dark:hidden" src={vector} alt="Redirección a bingo.es para imprimir cartones"/>
+                <Image class="w-1/4 p-2 md:p-1 hidden dark:block" src={vector_blanco} alt="Redirección a bingo.es para imprimir cartones"/>
+                <p class=" font-righteous dark:text-slate-200 w-3/4 p-4 text-lg">Cómo jugar?</p>
             </button>
         </a>
     </div>

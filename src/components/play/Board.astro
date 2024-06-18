@@ -4,14 +4,14 @@ const NB_Numeros = 80;
 const numRows = Math.ceil(NB_Numeros / 10);
 ---
 
-<table class="font-righteous mx-auto">
+<table class="font-righteous dark:bg-slate-800 mx-auto">
     {
         Array.from({ length: numRows }).map((_, i) => (
             <tr>
                 {Array.from({ length: 10 }).map((_, j) => {
                     const index = i * 10 + j + 1; // Increment to start at 1
                     return (
-                        <td class="border-2 p-0.5 min-w-9 text-center text-2xl md:text-3xl md:min-w-10" id={`number_${index}`}>{index}</td>
+                        <td class="dark:text-slate-200 dark:border-slate-500 border-2 p-0.5 min-w-9 text-center text-2xl md:text-3xl md:min-w-10" id={`number_${index}`}>{index}</td>
                     );
                 })}
             </tr>
