@@ -4,6 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
   site: 'https://letesdev.github.io',
   base: '/bingoletes',
   integrations: [tailwind()]
