@@ -101,7 +101,7 @@ function update_bingo_table(said_number) {
 }
 
 function say_number(said_number) {
-    var audio = new Audio("/bingoletes/audio/" + said_number + ".mp3");
+    var audio = new Audio("/audio/" + said_number + ".mp3");
     audio.play();
 }
 
